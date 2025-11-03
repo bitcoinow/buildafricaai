@@ -12,11 +12,24 @@ export default function NewsletterForm() {
     setStatus('loading');
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      setStatus('success');
-      setMessage('Thank you for subscribing! Check your email for confirmation.');
-      setEmail('');
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus('success');
+        setMessage('Thank you for subscribing! Check your email for confirmation.');
+        setEmail('');
+      } else {
+        setStatus('error');
+        setMessage(data.error || 'Something went wrong. Please try again.');
+      }
       
       setTimeout(() => {
         setStatus('idle');

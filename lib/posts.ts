@@ -35,11 +35,21 @@ export async function getAllPosts(): Promise<PostData[]> {
   return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
-export async function getPostBySlug(slug: string): Promise<PostData | null> {
+export async function getPostBySlug(slug: string, raw: boolean = false): Promise<PostData | null> {
   try {
     const fullPath = path.join(postsDirectory, `${slug}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
+
+    if (raw) {
+      return {
+        slug,
+        title: data.title,
+        date: data.date,
+        excerpt: data.excerpt,
+        content: content,
+      };
+    }
 
     const processedContent = await remark().use(html).process(content);
     const contentHtml = processedContent.toString();
