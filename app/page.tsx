@@ -35,21 +35,21 @@ export default function Page(){
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8">Our Mission</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="bg-white p-6 rounded-lg shadow-sm transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-green-50 hover:to-emerald-50 hover:border-2 hover:border-green-400 cursor-pointer">
               <div className="text-3xl mb-4">🎓</div>
               <h3 className="text-xl font-bold mb-3">Education & Training</h3>
               <p className="text-slate-600">
                 Empowering the next generation of African AI researchers, engineers, and entrepreneurs through world-class training programs.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="bg-white p-6 rounded-lg shadow-sm transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-yellow-50 hover:to-amber-50 hover:border-2 hover:border-yellow-400 cursor-pointer">
               <div className="text-3xl mb-4">🔬</div>
               <h3 className="text-xl font-bold mb-3">Research & Innovation</h3>
               <p className="text-slate-600">
                 Advancing AI research that addresses Africa's unique challenges in healthcare, agriculture, education, and infrastructure.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="bg-white p-6 rounded-lg shadow-sm transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-red-50 hover:to-rose-50 hover:border-2 hover:border-red-400 cursor-pointer">
               <div className="text-3xl mb-4">🤝</div>
               <h3 className="text-xl font-bold mb-3">Community Building</h3>
               <p className="text-slate-600">
