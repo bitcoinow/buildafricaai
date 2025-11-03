@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuildAfricaAI Logo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f1f5f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 20px 0;
+      color: #1e293b;
+    }
+    .logo-display {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+    .logo-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo-dark {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 8px;
+    }
+    .logo-light {
+      background: #f8fafc;
+      padding: 30px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+    }
+    button {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 5px;
+    }
+    button:hover {
+      background: #2563eb;
+    }
+    .download-section {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    p {
+      color: #64748b;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>BuildAfricaAI Logo</h1>
+    <p>Right-click on the logo and "Save Image As..." or use the download buttons below</p>
+    
+    <div class="logo-display">
+      <div class="logo-item">
+        <div class="logo-dark">
+          <svg id="logo-svg" viewBox="0 0 100 100" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color: #3B82F6; stop-opacity: 1" />
+                <stop offset="100%" style="stop-color: #8B5CF6; stop-opacity: 1" />
+              </linearGradient>
+            </defs>
+            
+            <!-- Africa continent outline -->
+            <path
+              d="M 50 15 
+                 L 52 18 L 54 20 L 55 25 L 56 30 
+                 L 58 35 L 60 38 L 62 42 L 63 48 
+                 L 64 55 L 65 62 L 66 68 L 65 72 
+                 L 63 76 L 60 78 L 56 80 L 52 82 
+                 L 48 83 L 44 82 L 40 80 L 37 78 
+                 L 35 75 L 34 70 L 33 65 L 32 60 
+                 L 31 55 L 30 50 L 29 45 L 30 40 
+                 L 32 35 L 35 30 L 38 26 L 42 22 
+                 L 46 18 Z"
+              fill="url(#techGradient)"
+              stroke="#1E293B"
+              stroke-width="1.5"
+            />
+            
+            <!-- Circuit board pattern overlay -->
+            <g opacity="0.6">
+              <!-- Horizontal lines -->
+              <line x1="35" y1="30" x2="45" y2="30" stroke="#E0E7FF" stroke-width="1" />
+              <line x1="38" y1="40" x2="48" y2="40" stroke="#E0E7FF" stroke-width="1" />
+              <line x1="40" y1="50" x2="55" y2="50" stroke="#E0E7FF" stroke-width="1" />
+              <line x1="42" y1="60" x2="58" y2="60" stroke="#E0E7FF" stroke-width="1" />
+              <line x1="45" y1="70" x2="55" y2="70" stroke="#E0E7FF" stroke-width="1" />
+              
+              <!-- Vertical lines -->
+              <line x1="40" y1="35" x2="40" y2="45" stroke="#E0E7FF" stroke-width="1" />
+              <line x1="50" y1="25" x2="50" y2="55" stroke="#E0E7FF" stroke-width="1" />
+              <line x1="55" y1="45" x2="55" y2="65" stroke="#E0E7FF" stroke-width="1" />
+              
+              <!-- Circuit nodes -->
+              <circle cx="40" cy="30" r="1.5" fill="#FCD34D" />
+              <circle cx="40" cy="40" r="1.5" fill="#FCD34D" />
+              <circle cx="50" cy="30" r="1.5" fill="#FCD34D" />
+              <circle cx="50" cy="50" r="1.5" fill="#FCD34D" />
+              <circle cx="55" cy="50" r="1.5" fill="#FCD34D" />
+              <circle cx="55" cy="60" r="1.5" fill="#FCD34D" />
+              <circle cx="45" cy="70" r="1.5" fill="#FCD34D" />
+            </g>
+            
+            <!-- AI neural network nodes -->
+            <g opacity="0.8">
+              <circle cx="48" cy="35" r="2" fill="#FFFFFF" />
+              <circle cx="52" cy="45" r="2" fill="#FFFFFF" />
+              <circle cx="48" cy="55" r="2" fill="#FFFFFF" />
+              <circle cx="52" cy="65" r="2" fill="#FFFFFF" />
+              
+              <!-- Connecting lines -->
+              <line x1="48" y1="35" x2="52" y2="45" stroke="#FFFFFF" stroke-width="0.5" opacity="0.5" />
+              <line x1="52" y1="45" x2="48" y2="55" stroke="#FFFFFF" stroke-width="0.5" opacity="0.5" />
+              <line x1="48" y1="55" x2="52" y2="65" stroke="#FFFFFF" stroke-width="0.5" opacity="0.5" />
+            </g>
+          </svg>
+        </div>
+        <p>On Dark Background</p>
+      </div>
+      
+      <div class="logo-item">
+        <div class="logo-light">
+          <svg viewBox="0 0 100 100" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="techGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color: #3B82F6; stop-opacity: 1" />
+                <stop offset="100%" style="stop-color: #8B5CF6; stop-opacity: 1" />
+              </linearGradient>
+            </defs>
+            
+            <path
+              d="M 50 15 
+                 L 52 18 L 54 20 L 55 25 L 56 30 
+                 L 58 35 L 60 38 L 62 42 L 63 48 
+                 L 64 55 L 65 62 L 66 68 L 65 72 
+                 L 63 76 L 60 78 L 56 80 L 52 82 
+                 L 48 83 L 44 82 L 40 80 L 37 78 
+                 L 35 75 L 34 70 L 33 65 L 32 60 
+                 L 31 55 L 30 50 L 29 45 L 30 40 
+                 L 32 35 L 35 30 L 38 26 L 42 22 
+                 L 46 18 Z"
+              fill="url(#techGradient2)"
+              stroke="#1E293B"
+              stroke-width="1.5"
+            />
+            
+            <g opacity="0.6">
+              <line x1="35" y1="30" x2="45" y2="30" stroke="#E0E7FF" stroke-width="1" />
+              <line x1="38" y1="40" x2="48" y2="40" stroke="#E0E7FF" stroke-width="1" />
+              <line x1="40" y1="50" x2="55" y2="50" stroke="#E0E7FF" stroke-width="1" />
+              <line x1="42" y1="60" x2="58" y2="60" stroke="#E0E7FF" stroke-width="1" />
+              <line x1="45" y1="70" x2="55" y2="70" stroke="#E0E7FF" stroke-width="1" />
+              
+              <line x1="40" y1="35" x2="40" y2="45" stroke="#E0E7FF" stroke-width="1" />
+              <line x1="50" y1="25" x2="50" y2="55" stroke="#E0E7FF" stroke-width="1" />
+              <line x1="55" y1="45" x2="55" y2="65" stroke="#E0E7FF" stroke-width="1" />
+              
+              <circle cx="40" cy="30" r="1.5" fill="#FCD34D" />
+              <circle cx="40" cy="40" r="1.5" fill="#FCD34D" />
+              <circle cx="50" cy="30" r="1.5" fill="#FCD34D" />
+              <circle cx="50" cy="50" r="1.5" fill="#FCD34D" />
+              <circle cx="55" cy="50" r="1.5" fill="#FCD34D" />
+              <circle cx="55" cy="60" r="1.5" fill="#FCD34D" />
+              <circle cx="45" cy="70" r="1.5" fill="#FCD34D" />
+            </g>
+            
+            <g opacity="0.8">
+              <circle cx="48" cy="35" r="2" fill="#FFFFFF" />
+              <circle cx="52" cy="45" r="2" fill="#FFFFFF" />
+              <circle cx="48" cy="55" r="2" fill="#FFFFFF" />
+              <circle cx="52" cy="65" r="2" fill="#FFFFFF" />
+              
+              <line x1="48" y1="35" x2="52" y2="45" stroke="#FFFFFF" stroke-width="0.5" opacity="0.5" />
+              <line x1="52" y1="45" x2="48" y2="55" stroke="#FFFFFF" stroke-width="0.5" opacity="0.5" />
+              <line x1="48" y1="55" x2="52" y2="65" stroke="#FFFFFF" stroke-width="0.5" opacity="0.5" />
+            </g>
+          </svg>
+        </div>
+        <p>On Light Background</p>
+      </div>
+    </div>
+    
+    <div class="download-section">
+      <button onclick="downloadSVG()">Download SVG</button>
+      <button onclick="downloadPNG(512)">Download PNG (512px)</button>
+      <button onclick="downloadPNG(1024)">Download PNG (1024px)</button>
+      <button onclick="downloadPNG(2048)">Download PNG (2048px)</button>
+    </div>
+  </div>
+
+  <script>
+    function downloadSVG() {
+      const svg = document.getElementById('logo-svg');
+      const serializer = new XMLSerializer();
+      const svgString = serializer.serializeToString(svg);
+      const blob = new Blob([svgString], { type: 'image/svg+xml' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'buildafricaai-logo.svg';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function downloadPNG(size) {
+      const svg = document.getElementById('logo-svg');
+      const canvas = document.createElement('canvas');
+      canvas.width = size;
+      canvas.height = size;
+      const ctx = canvas.getContext('2d');
+      
+      const serializer = new XMLSerializer();
+      const svgString = serializer.serializeToString(svg);
+      const img = new Image();
+      const blob = new Blob([svgString], { type: 'image/svg+xml' });
+      const url = URL.createObjectURL(blob);
+      
+      img.onload = function() {
+        ctx.drawImage(img, 0, 0, size, size);
+        canvas.toBlob(function(blob) {
+          const pngUrl = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = pngUrl;
+          a.download = `buildafricaai-logo-${size}px.png`;
+          a.click();
+          URL.revokeObjectURL(pngUrl);
+          URL.revokeObjectURL(url);
+        });
+      };
+      
+      img.src = url;
+    }
+  </script>
+</body>
+</html>
